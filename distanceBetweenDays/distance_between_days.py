@@ -38,10 +38,10 @@ class DistanceBetweenDays:
             n2 += monthDays[i]
         n2 += self.count_leap_years(self.d2)
 
-        return n2 - n1
+        return n2 - n1 - 1
 
 
 if __name__ == '__main__':
     dt1 = raw_input("Enter Date1 in DD/MM/YYYY: ")
     dt2 = raw_input("Enter Date2 in DD/MM/YYYY: ")
-    print("{0} days".format(DistanceBetweenDays(dt1, dt2).get_difference() - 1))
+    print("{0} days".format(DistanceBetweenDays(dt1, dt2).get_difference()))
